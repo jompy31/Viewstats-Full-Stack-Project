@@ -1,0 +1,15 @@
+.container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logoImg {
+  width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}

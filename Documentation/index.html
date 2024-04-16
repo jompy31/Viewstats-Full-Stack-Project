@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Viewstats Interview Documentation</title>
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body>
+
+	<section id="body" class="width">
+
+		<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a style="font-size: 22px" href="#">Viewstats Interview Documentation</a></h1>
+				<h2>Documentation by <b>Jean Pierre Barnett</b></h2>
+			</header>
+
+			<nav id="mainnav">
+				<ul>
+					<li class="item selected-item"><a href="#topMain">Introduction</a></li>
+					<li class="item"><a href="#HS">Help and technical support</a></li>
+					<li class="item"><a href="#DWT">Environment Settings</a></li>
+					<li class="item"><a href="#HAP">Web application implementation</a></li>
+					<li class="item"><a href="#AUC">User Roles</a></li>
+					<!-- <li class="item"><a href="#bs">Manual de usuario</a></li> -->
+
+				</ul>
+			</nav>
+		</aside>
+		<section id="content">
+			<article id="topMain">
+				<div class="container">
+					<img src="assets/viewstats.png" alt="Home Icon" width="100%" height="auto">
+				</div>
+				<h2>1. Introduction</h2>
+				<br>
+				<p>Welcome to the Viewstats Full Stack Project, developed by Jean Pierre Barnett. This project
+					represents a comprehensive web application that allows users to register and log in to manage their
+					to-do lists.</p>
+
+				<h2>A-) Features</h2>
+				<p>The application offers the following features:</p>
+				<ul>
+					<li>User registration and login.</li>
+					<li>Creation, management, and deletion of to-do list items.</li>
+					<li>Access to to-do lists from anywhere using the user account.</li>
+				</ul>
+
+				<h2>B-) Technologies Used</h2>
+				<p>The project is developed using the following technologies:</p>
+				<ul>
+					<li>Frontend: Next.js and React.</li>
+					<li>Backend: Node.js, Express, and MongoDB.</li>
+				</ul>
+
+				<h2>C-) UI/UX Design</h2>
+				<p>Special attention has been given to user interface design to provide an intuitive and efficient
+					experience to users. Features include:</p>
+				<ul>
+					<li>Loading and error states.</li>
+					<li>Custom and thoughtful user interface.</li>
+					<li>Mobile-friendly and accessibility.</li>
+					<li>Animations and tooltips.</li>
+				</ul>
+
+				<h2>2. Expected Outcomes</h2>
+				<p>The project is expected to meet the following criteria:</p>
+				<ul>
+					<li>Flawless setup of the Next.js application with advanced configurations.</li>
+					<li>Fully responsive design with exceptional UI/UX.</li>
+					<li>Excellent use of state management using React state/Context API.</li>
+					<li>Seamless integration of API with error handling.</li>
+					<li>Well-designed backend models and architecture.</li>
+					<li>Comprehensive and clear documentation.</li>
+					<li>Quality and efficiency of the code.</li>
+				</ul>
+				<p>The project should be submitted via the Vercel platform, providing the deployment URL on Vercel as
+					well as access to the backend repository.</p>
+			</article>
+
+			<article id="HS">
+				<h2>2. Help and technical support </h2><br />
+				<p>
+					If you have any questions, please use Contact Us via WhatsApp for help:<br />
+					<a class="button"
+						href="https://api.whatsapp.com/send?phone=50662558356&text=Pagina%3A%20ABCupon%2C%20%20Necesito%20soporte%20con%20el%20siguiente%20Fallo%3A%20"
+						target="_blank">Whatsapp Support</a>
+				</p>
+			</article>
+			<article id="DWT">
+				<h2>3. Environment Setup</h2>
+				<br>
+				<p class="secondPara" style="margin-bottom:0px">To set up the Next.js application with MongoDB Atlas and
+					the Next.js server, follow these steps:</p>
+				<br>
+				<p class="secondPara heading">A. Install Node.js</p>
+				<img height="100%" width="25%" src="assets/img/nodejs_logo.png" alt="HTML Structure" />
+
+				<ol class="styledlist listCustom" type="I">
+					<li>
+						<ul> Download instructions:
+							<li>Mac users: For OS X, download the .pkg file from the following link. <b>(v20.5.0
+									recommended)</b></li>
+							<li>Windows users: Download the MSI or .exe form below, whichever you prefer. <b>(v20.5.0
+									recommended)</b></li>
+						</ul>
+						<a href="https://nodejs.org/dist/v20.5.0/" class="button" target="_blank">Download Node.js
+							v.20.5.0 from here</a>
+					</li>
+
+					<li>After installing Node.js, you may need to restart your computer.</li>
+					<p style="color:#757575;font-size:18px;">To ensure Node.js is installed correctly, you can type the
+						following in the Windows console:
+					</p>
+					<code class="codeBlockBg">
+						node -v
+					</code>
+					</li>
+					<p style="color:red;font-size:18px;">NOTE: DO NOT IGNORE THE NODE JS VERSION. IT MUST BE 20.5.x
+					</p>
+
+				</ol>
+
+				<p class="secondPara heading" id="Configure">B. Install Git and Windows-Build-Tools (Windows PC Only)
+				</p>
+
+				<ul>
+					<li> Download and install the latest version from this link: https://git-scm.com/</li>
+					<br>
+					<li>Run PowerShell as administrator and execute
+						<code class="codeBlockBg">
+							npm install -g windows-build-tools
+						</code>
+					</li>
+				</ul>
+
+				<p class="secondPara heading" id="Configure">C. Install Yarn</p>
+				<h4>In your command prompt, type: </h4>
+				<code class="codeBlockBg">
+						npm install -g yarn
+					</code>
+
+				<p class="secondPara heading" id="Configure">D. Set Up Environment Variables and Configuration</p>
+
+				<p>Create a .env file in the root directory of your Next.js application and configure the following
+					variables:</p>
+
+				<code class="codeBlockBg">
+					MONGODB_URI=<YOUR_MONGODB_URI>
+				</code>
+
+				<p>Replace <YOUR_MONGODB_URI> with your actual MongoDB Atlas connection string.</p>
+
+				<p>For the Next.js server configuration, refer to the official Next.js documentation: <a
+						href="https://nextjs.org/docs/api-reference/cli#production">https://nextjs.org/docs/api-reference/cli#production</a>
+				</p>
+
+				<p>Now you're ready to start developing your Next.js application with MongoDB Atlas!</p>
+
+			</article>
+
+			<article id="InstallNextjs">
+				<h2>4. Installing the Next.js Application</h2>
+				<br>
+				<p><b><u>Step 1:</u></b> Create a new Next.js project</p>
+				<code class="codeBlockBg">
+					npx create-next-app your_project_name
+					cd your_project_name
+				</code>
+				<br>
+				<p><b><u>Step 2:</u></b> Install additional dependencies if needed</p>
+				<code class="codeBlockBg">
+					npm install <package_name>
+				</code>
+				<br>
+				<p><b><u>Step 3:</u></b> Configure and define application routes</p>
+				<code class="codeBlockBg">
+					// pages/index.js
+					<br/>
+					// pages/about.js
+					<br/>
+					// Other page and route files
+				</code>
+				<br>
+				<p><b><u>Step 4:</u></b> Set up backend if needed</p>
+				<code class="codeBlockBg">
+			src\lib\utils.js
+			import mongoose from "mongoose"
+
+			const connection = {};
+			
+			export const connectToDb = async () => {
+			  try {
+				if(connection.isConnected) {
+				  console.log("Using existing connection");
+				  return;
+				}
+				const db = await mongoose.connect(process.env.MONGO);
+				connection.isConnected = db.connections[0].readyState;
+			  } catch (error) {
+				console.log(error);
+				throw new Error(error);
+			  }
+			};
+			
+				</code>
+				<br>
+				<p><b><u>Step 5:</u></b> Run the development server</p>
+				<code class="codeBlockBg">
+					npm run dev
+				</code>
+				<br>
+				<p>You have now successfully set up a Next.js application. You can further customize and expand your
+					application using Next.js and other related technologies.</p>
+			</article>
+
+
+			<br>
+			<a href="#topMain" class="arrowTop">
+				<img src="assets/img/top.png" alt="gototop" />
+			</a>
+
+			<footer class="clear">
+				<hr>
+				<p>&copy; 2023 ABcupon. &nbsp;| Desarrollado por <a href="">Jean Pierre Barnett </a></p>
+			</footer>
+			<article id="HAP">
+				<h2>4. Web Application Deployment</h2>
+				<br>
+				<h3>Overview of sections of the application:</h3>
+				<p>When you run the deployed application, you will find the following sections:</p>
+
+				<h2>1. Homepage /</h2>
+				<p>
+					The homepage of ViewStats showcases Jean Pierre Barnett's profile as a Full Stack Developer,
+					emphasizing his skills and experience. It includes a brief summary of his expertise and an
+					invitation to view his portfolio and contact him.
+				</p>
+				<img src="assets/viewstats/home.png" alt="Home Icon" width="40%" height="auto">
+				<code class="codeBlockBg">
+					The page.js document shows a React component called Home, which represents the home page of a website. In this component, elements like Link and Image are imported from the next/link and next/image library respectively. The Home component includes a main container with two sections: one for the textual content and another for the image. The textual content describes Jean Pierre Barnett's experience and skills as a Full Stack developer, highlighting his experience in a variety of technologies and tools. Additionally, links are provided to view his portfolio and to contact him. The component uses CSS styles defined in the home.module.css file to format and style elements on the page.
+					</code>
+
+				<h2>2. About</h2>
+				<p>The src\app\about\page.jsx file displays the code for an About page of a website. Imports the necessary Next.js modules, including Image, and page-specific styles from a about.module.css file. The AboutPage function defines the content of the About page, which includes a subtitle, a title, a detailed description about Jean Pierre Barnett and his professional achievements, as well as a list of websites notably created by him. Additionally, it displays key statistics about his experience and achievements, represented in the form of boxes. The page is designed to highlight Jean Pierre Barnett's experience and skills in software development and electronic engineering.</p>
+				<img src="assets/viewstats/about.png" alt="Captura de Pantalla de Asociados" width="40%" height="auto">
+
+				<h2>3. Contact</h2>
+				<p>The contact.js file displays the code for a Contact page on a website. Import the necessary React modules, such as useRef, and the necessary Next.js image. It also imports page-specific styles from a contact.module.css file. The ContactPage feature defines the content of the contact page, which includes a contact form where users can enter their name, email, phone number (optional), and a message. When the user submits the form, the form data is collected and a WhatsApp message is generated with this information. Finally, a new browser window opens with the WhatsApp link containing the pre-filled message. The page is designed to allow users to contact Jean Pierre Barnett via WhatsApp.</p>
+				<img src="assets/viewstats/contact.png" alt="Captura de Pantalla de Sobre Nosotros" width="40%" height="auto">
+
+				<h2>4. Dashboard</h2>
+				<p>The page.jsx file in the src\app\dashboard folder displays the blog page code. This page renders a list of blog posts obtained from a local API.
+
+					Let's start with the Dashboard function, which uses the useState hook to maintain a local state of posts and the useEffect hook to make a data request to the server when the component is first mounted. This request is made through the fetchData function, which fetches data from the local API /api/blog and updates the posts status with the response.
+					
+					The Dashboard function then renders the posts inside a div container with the container class. Iterates over the list of posts using the map method, and for each post, renders a PostCard component, passing the post as a prop.
+					
+					The PostCard component, located in src\components\postCard\postCard.jsx, receives the post as a prop and displays information such as the post image (if available), the post date, the title, and a short description of the post . Additionally, it provides links to edit the post if you are authenticated or just read more about it.
+					
+					Finally, in src\app\dashboard\[slug]\page.jsx, we find the code for an individual post page. This page receives a slug as a URL parameter and uses this slug to get the post details from the local API. Renders the post image (if available), title, author information, and post date, as well as the full content of the post.
+					
+					Both pages make use of functional React components, hooks, and make data requests to a local API to dynamically display blog information.</p>
+				<img src="assets/viewstats/dashboard.png" alt="Home Icon" width="40%" height="auto">
+				<img src="assets/viewstats/dashboard1.png" alt="Home Icon" width="40%" height="auto">
+				<img src="assets/viewstats/dashboardedit.png" alt="Home Icon" width="40%" height="auto">
+
+				<h2>5. Register</h2>
+				<h3>Register Page (page.jsx):</h3>
+<p>In RegisterPage, the RegisterForm component is utilized to display the registration form. This component resides within a container styled with the <code>styles.container</code> class defined in the <code>register.module.css</code> style file.</p>
+
+<h3>Register Form Component (registerForm.jsx):</h3>
+<p>This component encompasses a form including fields for username, email, password, and password confirmation. Upon form submission, the entered data is dispatched to the <code>register</code> function defined in the <code>action.js</code> file to process user registration.</p>
+<p>The <code>register</code> function conducts several checks before registering the user into the database. It ensures password match, verifies unique username, and validates the entered password against the one stored in the database if the user exists. Upon successful registration, the user is redirected to the login page. In case of any error, an appropriate error message is displayed.</p>
+<p>Additionally, the form includes a link redirecting users to the login page if they already have an account.</p>
+
+<h3>Registration Actions (action.js):</h3>
+<p>The <code>action.js</code> file contains the <code>register</code> function responsible for registering a new user in the database. This function verifies the validity of the user's input data, such as ensuring a unique username and matching passwords. It then uses bcrypt to hash the password before saving it to the database. If the registration is successful, it returns an object with a success indicator. If there's an error during registration, it returns an object with an appropriate error message.</p>
+<p>The file also includes other related actions such as <code>login</code> and <code>logout</code> functions for handling user authentication.</p>
+				<img src="assets/viewstats/register.png" alt="Captura de Pantalla de Clasificados" width="40%" height="auto">
+
+				<h2>6. login</h2>
+				
+<h3>Login Page (page.jsx):</h3>
+<p>In the LoginPage component located in src\app\auth\login\page.jsx, the LoginForm component is utilized to display the login form. This component resides within a container styled with the <code>styles.container</code> class defined in the <code>login.module.css</code> style file.</p>
+
+<h3>Login Form Component (loginForm.jsx):</h3>
+<p>The LoginForm component displays a form with fields for username and password. Upon form submission, the entered data is dispatched to the <code>login</code> function defined in the <code>action.js</code> file to authenticate the user.</p>
+<p>The <code>login</code> function verifies the user's credentials against the stored data in the database. If the credentials are correct, the user is authenticated, and if not, an appropriate error message is displayed.</p>
+<p>If the user doesn't have an account, there is a link provided to the registration page.</p>
+<p>Additionally, the LoginForm component includes details for a demo admin user for testing purposes.</p>
+
+<h3>Authentication Actions (action.js):</h3>
+<p>The <code>action.js</code> file contains the <code>login</code> function responsible for authenticating the user. This function checks whether the provided username and password match an existing user in the database. If the authentication is successful, it returns an object with a success indicator. If there's an error during authentication, it returns an object with an appropriate error message.</p>
+
+<h3>Authentication Configuration (auth.config.js, auth.js):</h3>
+<p>Similar to the registration process, authentication configuration and logic are handled in the <code>auth.config.js</code> and <code>auth.js</code> files. These files define the authentication pages, providers, and handle authentication callbacks.</p>
+<p>The user's authentication status is maintained by NextAuth.js. Upon successful login, NextAuth.js generates a JWT (JSON Web Token) containing the user's information, which is stored in a session cookie. This allows the user to remain authenticated until they log out or the session expires.</p>
+				<img src="assets/viewstats//login.png" alt="Captura de Pantalla de Precios" width="40%" height="auto">
+
+				
+				<h2>7. Admin</h2>
+				<h3>Admin Dashboard Page (page.jsx):</h3>
+<p>The AdminPage component located in src\app\admin\page.jsx serves as the dashboard for managing posts and users. It consists of two main sections: one for managing posts and another for managing users. Each section displays relevant components and forms for adding, editing, and deleting posts or users.</p>
+<p>The session information is obtained using the <code>auth()</code> function, which authenticates the user. The user's ID is then passed as a prop to the AdminPostForm component.</p>
+
+<h3>Admin Posts Component (adminPosts.jsx):</h3>
+<p>The AdminPosts component displays a list of all posts fetched from the database using the <code>getPosts()</code> function. Each post is rendered with its title, an optional image, and options to edit or delete the post.</p>
+<p>The edit option redirects to the admin edit form page, passing the post ID as a URL parameter.</p>
+
+<h3>Admin Post Form Component (adminPostForm.jsx):</h3>
+<p>The AdminPostForm component provides a form for creating new posts. It includes fields for entering the title, description, and user ID, with the user ID being pre-filled using the session information obtained from authentication.</p>
+<p>Upon form submission, the data is dispatched to the <code>addPost</code> function defined in the <code>action.js</code> file for adding a new post to the database.</p>
+
+<h3>Admin Users Component (adminUsers.jsx):</h3>
+<p>The AdminUsers component displays a list of all users fetched from the database using the <code>getUsers()</code> function. Each user is rendered with their username, an optional avatar image, and an option to delete the user.</p>
+
+<h3>Admin User Form Component (adminUserForm.jsx):</h3>
+<p>The AdminUserForm component provides a form for adding new users. It includes fields for entering the username, email, password, and specifying whether the user is an admin or not.</p>
+<p>Upon form submission, the data is dispatched to the <code>addUser</code> function defined in the <code>action.js</code> file for adding a new user to the database.</p>
+
+<h3>Admin Edit Form Page (adminEditForm.jsx):</h3>
+<p>The AdminEditForm component serves as the page for editing existing posts. It retrieves the post ID from the URL parameters and fetches the corresponding post data from the database. The retrieved data is then pre-filled into the form fields, allowing the user to make edits.</p>
+<p>Upon form submission, the edited data is dispatched to the <code>editPost</code> function defined in the <code>action.js</code> file for updating the post in the database.</p>
+				<img src="assets/viewstats/admin.png" alt="Captura de Pantalla de Blog" width="40%" height="auto">
+				<img src="assets/viewstats/dashboardedit.png" alt="Captura de Pantalla de Blog" width="40%" height="auto">
+
+				
+				<article id="AUC">
+					<h2>6. User Roles and Functions</h2>
+<br>
+<p>When accessing the application via a web browser, different user roles have distinct functions and capabilities. Below is a breakdown of user roles and their respective functions:</p>
+
+<h3>6.1. User</h3>
+<p>The User role represents the target audience for the products and services provided by the application. Upon accessing the application, the User can:</p>
+<ul>
+  <li>Register an account</li>
+  <li>Login to the application</li>
+  <li>Edit tasks</li>
+</ul>
+
+<h3>6.2. Admin User</h3>
+<p>This user role is aimed at:</p>
+<ul>
+  <li>Creating tasks</li>
+  <li>Editing tasks</li>
+  <li>Deleting tasks</li>
+  <li>Creating users</li>
+  <li>Granting admin privileges to users</li>
+</ul>
+						
+			
+				</article>
+
+
+				<br></br>
+
+				<br>
+				<a href="#topMain" class="arrowTop">
+					<img src="assets/img/top.png" alt="gototop" />
+				</a>
+				<p>
+					If you have any questions, please use Contact Us via WhatsApp for help:<br />
+					<a class="button"
+						href="https://api.whatsapp.com/send?phone=50662558356&text=Company%3A%20TDM%2C%20I%20need%20support%20with%20the%20following%20issue%3A%20"
+						target="_blank">WhatsApp Support</a>
+				</p>
+
+				<footer class="clear">
+					<hr>
+					<p>&copy; 2023 Interview Viewstats. Desarrollado por <a
+							href="https://www.linkedin.com/in/jean-caruzo-452b9a1b1/">Jean Pierre Barnett </a></p>
+				</footer>
+
+		</section>
+		<div class="clear"></div>
+	</section>
+
+
+	<script>
+		var header = document.getElementById("mainnav");
+		var btns = header.getElementsByClassName("item");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("selected-item");
+				current[0].className = current[0].className.replace(" selected-item", "");
+				this.className += " selected-item";
+			});
+		}
+	</script>
+</body>
+
+</html>
