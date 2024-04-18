@@ -32,7 +32,7 @@ const AdminPostForm = () => {
 
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/blog`);
+        const res = await fetch(`https://viewstat-interview.netlify.app/api/blog`);
         if (!res.ok) {
           throw new Error("Something went wrong");
         }

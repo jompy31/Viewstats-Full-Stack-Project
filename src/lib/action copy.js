@@ -33,7 +33,7 @@ export const addPost = async (prevState,formData) => {
 };
 export const editPost = async (postId, postData) => {
   try {
-    const response = await fetch(`http://localhost:3000/api/blog/${postId}`, {
+    const response = await fetch(`https://viewstat-interview.netlify.app/api/blog/${postId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
