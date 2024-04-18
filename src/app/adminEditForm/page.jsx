@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { editPost } from "@/lib/action";
 import styles from "./adminEditForm.module.css";
-import Link from "next/link";
 
 const AdminPostForm = () => {
   const [postData, setPostData] = useState({

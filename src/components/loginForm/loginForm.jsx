@@ -10,9 +10,9 @@ const LoginForm = () => {
   const [state, formAction] = useFormState(login, undefined);
   const [showPassword, setShowPassword] = useState(false);
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
+  // const togglePasswordVisibility = () => {
+  //   setShowPassword(!showPassword);
+  // };
   return (
     <form className={styles.form} action={formAction}>
       <input type="text" placeholder="username" name="username" />

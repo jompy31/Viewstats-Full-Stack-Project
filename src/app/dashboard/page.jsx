@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from "react";
 import PostCard from "@/components/postCard/postCard";
 import styles from "./blog.module.css";
-import { getPosts } from "@/lib/data";
-import Link from "next/link";
+
 
 
 
