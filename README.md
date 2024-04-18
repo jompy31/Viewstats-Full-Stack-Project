@@ -44,8 +44,7 @@ Jean Pierre Barnett developed a consumer-facing full stack web application for t
 - React
 - Node.js
 - Express
-- MySQL
-- Firebase (or other choice of back end technologies)
+- MongoDb
 
 ## 🛠️ Technologies and Tools Used:
 
@@ -54,6 +53,40 @@ Jean Pierre Barnett developed a consumer-facing full stack web application for t
 <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"  height="25px"/>
 <!-- Add badges for other technologies used -->
 </p>
+
+## 3. Environment Setup
+To set up the Next.js application with MongoDB Atlas and the Next.js server, follow these steps:
+
+A. Install Node.js:
+
+1. Mac users: Download the .pkg file for Node.js v20.5.0 from [here](https://nodejs.org/download/release/v20.5.0/).
+   
+   Windows users: Download the MSI or .exe file for Node.js v20.5.0 from [here](https://nodejs.org/download/release/v20.5.0/).
+
+2. After installing Node.js, ensure it is installed correctly by running `node -v` in the command prompt or terminal. The version should be 20.5.x.
+
+B. Install Git and Windows-Build-Tools (Windows PC Only):
+
+1. Download and install the latest version of Git from [here](https://git-scm.com/).
+
+2. Run PowerShell as administrator and execute `npm install -g windows-build-tools`.
+
+C. Install Yarn:
+
+npm install -g yarn
+
+D. Set Up Environment Variables and Configuration:
+
+1. Create a `.env` file in the root directory of your Next.js application.
+
+2. Configure the following variables in the `.env` file:
+MONGODB_URI=<Your MongoDB Atlas connection string>
+
+Replace `<Your MongoDB Atlas connection string>` with your actual MongoDB Atlas connection string.
+
+For the Next.js server configuration, refer to the official Next.js documentation [here](https://nextjs.org/docs/api-reference/cli#production).
+
+Now you're ready to start developing your Next.js application with MongoDB Atlas!
 
 ## ❤️ Let's get connected:
 
