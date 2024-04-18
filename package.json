@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install && npm run check-eslint && next build",
+    "build": "npm install --save-dev eslint && npm install && next build",
     "start": "next start",
-    "lint": "next lint",
-    "check-eslint": "eslint --version || npm install --save-dev eslint"
+    "lint": "next lint"
   },
   "dependencies": {
     "aws4": "^1.12.0",
