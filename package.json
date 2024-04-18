@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npm install && npm run check-eslint && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-eslint": "eslint --version || npm install eslint"
   },
   "dependencies": {
     "aws4": "^1.12.0",
