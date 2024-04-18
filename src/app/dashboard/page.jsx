@@ -12,7 +12,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("https://viewstat-interview.netlify.app/api/blog");
+        const res = await fetch("https://viewstats-full-stack-project-vercel-git-main-jompy31s-projects.vercel.app/api/blog");
         if (!res.ok) {
           throw new Error("Something went wrong");
         }
