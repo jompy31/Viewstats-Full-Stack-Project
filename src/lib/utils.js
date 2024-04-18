@@ -9,7 +9,8 @@ export const connectToDb = async () => {
       return;
     }
     const db = await mongoose.connect(process.env.MONGO,{
-      connectTimeoutMS: 30000,
+      connectTimeoutMS: 30000, // Tiempo de espera para establecer la conexión
+      socketTimeoutMS: 60000, // Tiempo de espera para operaciones de socket
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
