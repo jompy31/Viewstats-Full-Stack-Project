@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const LoginForm = () => {
   const [state, formAction] = useFormState(login, undefined);
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword] = useState(false);
 
   // const togglePasswordVisibility = () => {
   //   setShowPassword(!showPassword);

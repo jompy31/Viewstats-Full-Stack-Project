@@ -1,12 +1,12 @@
 "use client"
 import Link from "next/link"
-import { usePathname, useRouter, useSearchParams } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 
 const NavigationTestPage = () => {
 
   // CLIENT SIDE NAVIGATION
   const router = useRouter()
-  const pathname = usePathname()
+  // const pathname = usePathname()
   const searchParams = useSearchParams()
 
   const q = searchParams.get("q")

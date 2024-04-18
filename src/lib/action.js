@@ -8,11 +8,11 @@ import bcrypt from "bcryptjs";
 
 export const addPost = async (prevState,formData) => {
 
-  const { title, desc, slug, userId } = Object.fromEntries(formData);
+  const { title, desc, userId } = Object.fromEntries(formData);
 
   try {
     connectToDb();
-    const timestamp = Date.now();
+    // const timestamp = Date.now();
     const slug = title.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
     const newPost = new Post({
       title,
@@ -48,7 +48,7 @@ export const deletePost = async (formData) => {
 };
 
 export const editPost = async (postId, formData) => {
-  const { id, title, desc, slug, userId } = formData; // Accede directamente a las propiedades
+  const {  title, desc, slug, userId } = formData; // Accede directamente a las propiedades
   // console.log("action",formData)
   try {
     connectToDb();
